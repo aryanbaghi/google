@@ -20,7 +20,7 @@ def result():
     os.chdir(os.path.join(os.path.abspath(sys.path[0]), "indexer/output"))
 
     ## call date command ##
-    p = subprocess.Popen(["./search","black"], stdout=subprocess.PIPE)
+    p = subprocess.Popen(["./search",request.form['search']])
 
     ## Talk with date command i.e. read data from stdout and stderr. Store this info in tuple ##
     (output, err) = p.communicate()
@@ -43,5 +43,5 @@ def result():
     return render_template('result.html', result=result)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
 
