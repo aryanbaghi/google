@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<br/><br/><br/><br/><br/><br/><br/>
+{% for item in result %}
+	{{ item.content }}
+	|
+	{{ item.pos }}
+	<hr/>
+{% endfor %}
+{% endblock %}
+
+

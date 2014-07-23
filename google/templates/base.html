@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+
+  <title>موتور جستجو</title>
+  <meta name="description" content="میراد">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/static/lib/foundation/css/normalize.css">
+  <link rel="stylesheet" href="/static/lib/foundation/css/foundation.css">
+<!--   <link rel="stylesheet" href="/static/css/fontello.css">
+  <link rel="stylesheet" href="/static/css/base.css"> -->
+
+
+  <script src="/static/lib/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="">موتور جستجو</a></h1>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="row">
+
+    <div class="large-12 columns">
+    {% block body %}
+
+    {% endblock %}
+    </div>
+  </div>
+  <script src="/static/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/static/lib/foundation/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
+

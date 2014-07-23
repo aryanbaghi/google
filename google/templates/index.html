@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<form action="/result" method="POST">
+	<br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/>
+	<div class="row">
+	  <div class="row collapse">
+	   	<div class="large-2 columns">
+        <button type="submit" class="button postfix">Find</button>
+	   	</div>
+	    <div class="large-10 columns">
+	      <input type="text" name="search" placeholder="Search for" />
+	    </div>
+   	</div>
+  </div>
+</form>
+{% endblock %}
+
+
