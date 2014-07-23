@@ -138,7 +138,8 @@ unsigned int n(char* term, HashTableStruct* hashTable)
 double IDF(char* term, unsigned int N, HashTableStruct* hashTable)
 {
     unsigned int n_of_term = n(term, hashTable);
-    return log((N - n_of_term + 0.5) / (n_of_term + 0.5));
+    // return log((N - n_of_term + 0.5) / (n_of_term + 0.5));
+    return ((N - n_of_term + 0.5) / (n_of_term + 0.5));
 }
 unsigned int f(char *term,unsigned int docId, HashTableStruct* hashTable)
 {
